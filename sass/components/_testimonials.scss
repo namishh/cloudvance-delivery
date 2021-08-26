@@ -1,0 +1,81 @@
+
+
+.testimonials{
+  padding: 2rem 4rem;
+  &-row{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+
+    @include respond(1000px){
+      flex-direction: column-reverse;
+      gap: 1rem;
+    }
+
+    &::before{
+      content : '\201C';
+      position: absolute;
+      font-size: 15rem;
+      top: -6rem;
+      left: 0;
+      color: rgba($teal-dark, $alpha: .6);
+    }
+
+    &::after{
+      content : '\201D';
+      position: absolute;
+      font-size: 15rem;
+      top: -6rem;
+      right: 0;
+      color: rgba($teal-dark, $alpha: .6);
+    }
+  }
+
+  &-col{
+    width: 40rem;
+    @include respond(480px){
+      width: 35rem;
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+
+
+  }
+
+  &-pic{
+    border-radius: 50%;
+    height: 7rem;
+  }
+
+  &-name{
+    margin-top: 1rem;
+    font-size: 2rem;
+    color: $teal-darkest;
+    font-weight: 600;
+  }
+
+  &-stars{
+    margin-top: 0.7rem;
+    margin-bottom: 1rem;
+    color: $teal-darkest;
+
+    & > *{
+      margin: 0 .3rem;
+      font-size: 1.5rem;
+    }
+
+  }
+
+  &-review{
+    font-size: 1.5rem;
+    @include respond(480px){
+      font-size: 1.3rem;
+    }
+  }
+}

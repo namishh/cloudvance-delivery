@@ -1,0 +1,27 @@
+{
+  "name": "tliks",
+  "version": "1.0.0",
+  "description": "![Logo](https://i.ibb.co/sVPB3v0/logo.png)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "npx node-sass ./sass/main.scss ./css/style.css -w",
+    "server": "npx live-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.1",
+    "node-sass": "^6.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dark-Jedi2108/cloudvance.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dark-Jedi2108/cloudvance/issues"
+  },
+  "homepage": "https://github.com/dark-Jedi2108/cloudvance#readme"
+}

@@ -1,0 +1,114 @@
+
+.faqs{
+
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  &-box{
+    width: 74rem;
+
+    @include respond(1336px){
+      width: 60rem;
+    }
+
+    @include respond(1170px){
+      width: 50rem;
+    }
+
+    @include respond(610px){
+      width: 45em;
+    }
+
+    @include respond(555px){
+      width: 40rem;
+    }
+
+    @include respond(480px){
+
+      width: 35rem;
+    }
+
+    @include respond(450px){
+
+      width: 30rem;
+    }
+  }
+
+
+  &-question{
+    text-transform: capitalize;
+    cursor: pointer;
+    color: $teal-dark;
+    background-color: white;
+    font-size: 2rem;
+    padding: 1rem;
+
+    @include respond(1336px){
+      font-size: 1.4rem;
+    }
+    
+    @include respond(610px){
+      font-size: 1.1rem;
+      letter-spacing: normal;
+    }
+    letter-spacing: 3px;
+    position: relative;
+
+    &::after{
+      content: "+";
+      font-size: 4rem;
+      position: absolute;
+      right: 1rem;
+      top: -.2rem;
+    }
+  }
+
+  &-answer{
+    padding: 1rem;
+    font-size: 1.3rem;
+    .content{
+      height: 0;
+      overflow: hidden;
+     
+      transition: .5s;
+    position: relative;
+      overflow-y: auto;
+    }
+  }
+
+  &-active &-answer .content{
+    height: 7rem;
+  }
+
+  &-content{
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    @include respond(1048px){
+        flex-direction: column;
+    }
+  }
+
+  &-img{
+    height: 30rem;margin-right: 2rem;
+    width: auto;
+
+    @include respond(1048px){
+      margin-bottom: 2rem;
+  }
+
+    @include respond(1404px){
+      height: 25rem;
+  
+    }
+
+    @include respond(450px){
+
+      width: 20rem;
+    }
+  }
+
+}

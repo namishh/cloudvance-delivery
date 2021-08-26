@@ -1,0 +1,73 @@
+.hero{
+  display: flex;
+  @include respond(924px){
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  height: 86vh;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 6rem;
+
+
+  &-img{
+    height: 35rem;
+    width: auto;
+
+    @include respond(1400px){
+      height: 25rem;
+    }
+  }
+
+  &-text{
+    font-weight: 400;
+    font-size: 6rem;
+    @include respond(924px){
+
+      text-align: center;
+    }
+    @include respond(1400px){
+      font-size: 4rem;
+    }
+    @include respond(690px){
+      font-size: 3rem;
+    }
+    span{
+      color: $teal-primary;
+      font-weight: 700;
+    }
+  }
+
+  &-subtitle{
+    @include respond(924px){
+
+      text-align: center;
+    }
+    margin-top: 1rem;
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    @include respond(1400px){
+      font-size: 1.6rem;
+    }
+
+  }
+  &-btn:link, &-btn:visited{
+    font-size: 2rem;
+    color: $teal-dark;
+    font-weight: 600;
+    transition: .3s;
+    @include respond(924px){
+      display: block;
+      text-align: center;
+    }
+    @include respond(1400px){
+      font-size: 1.3rem;
+    }
+    &:hover{
+      background-color: $teal-dark;
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}

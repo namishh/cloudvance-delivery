@@ -1,0 +1,74 @@
+@import './variables';
+@import './mixins';
+@import './utilities';
+
+@import './components/cargoDrone';
+@import './components/features';
+@import './components/navbar';
+@import './components/hero';
+@import './components/faqs';
+@import './components/timeline';
+@import './components/testimonials';
+@import './components/footer';
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200&display=swap');
+
+html{
+  overflow-x: hidden;
+  font-size: 62.5%;
+  font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
+
+      @include respond(1200px) { // width < 1200?
+          font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
+      }
+  
+      @include respond(900px) { // width < 900?
+          font-size: 50%; //1 rem = 8px, 8/16 = 50%
+      }
+      
+      @include respond(1400px) {
+          font-size: 75%; //1rem = 12, 12/16
+      }
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.headings{
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 800;
+  color: transparent;
+  background: linear-gradient(to right, rgb(151, 217, 255), $teal-dark);
+  -webkit-background-clip: text;
+  margin-bottom: 2rem;
+}
+
+
+.clearfix {
+  overflow: auto;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.up-btn{
+  position: fixed;
+
+  z-index: 12044341342;
+  font-size: 3rem;
+  bottom: 2rem;
+  right: 2rem;
+  
+  i{
+    color: $teal-dark;
+  }
+}

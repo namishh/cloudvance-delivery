@@ -1,0 +1,126 @@
+.navbar{
+  // position: sticky;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 2rem;
+  position: relative;
+
+  &-logo{
+    cursor: pointer;
+    height: 3rem;
+
+    @include respond(800px){
+      height: 2rem;
+    }
+  }
+
+  &-img{
+    height: 4rem;
+
+
+  }
+
+  &-list{
+    list-style: none;
+
+    @include respond(1224px){
+      display: none;
+    }
+  }
+
+  &-item{
+    display: inline-block;
+    padding: 0 2rem;
+    font-size: 1.6rem;
+
+
+  }
+  &-item a:visited, &-item a:link{
+    text-decoration: none;
+    color: #000;
+    transition: .4s;
+
+    &:hover{
+      color: $teal-darkest;
+    }
+  }
+
+  &-userbox{
+    display: flex;
+    align-items: center;
+
+
+    @include respond(1224px){
+      display: none;
+    }
+
+  }
+      
+  &-user{
+    font-size: 1.7rem;
+    margin-right: 1rem;
+    font-weight: 300;
+  }
+
+  &-hidden{
+    position: absolute;
+    top: 2rem;
+    width: 95%;
+
+    & > *{
+      position: absolute;
+    }
+
+    .fas{
+      right: 0rem;
+      color: $teal-darkest;
+      font-size: 2rem;
+      visibility: 0;
+      opacity: 0;
+      @include respond(1224px){
+        visibility: visible;
+        opacity: 1;
+      }
+      @include respond(600px){
+        right: 1rem;
+      }
+    }
+
+    &-links{
+      top: 4rem;
+      z-index: 10000;
+      background-color: #fff;
+      height: 0;
+      width: 100%;
+      opacity: 0;
+      visibility: none;
+      transition: .4s;
+    }
+
+    &-list{
+      list-style: none;
+      height: 0;
+
+    }
+
+    &-link{
+      color: $teal-darkest;
+      text-decoration: none;
+     
+    }
+
+    &-item{
+      margin: 2rem 0;
+      
+    }
+  }
+}
+
+.visible{
+  width: 100%;
+  opacity: 1;
+  visibility: visible;
+  height: 30rem;
+}

@@ -1,0 +1,48 @@
+
+.features{
+  margin-bottom: 3rem;
+  padding: 2rem 6rem;
+
+
+
+  &-cards{
+    display: flex;
+    justify-content: space-between;
+align-items: center;
+    @include respond(1000px){
+      
+      flex-direction: column-reverse;
+      gap: 1rem;
+    }
+  }
+
+  &-card{
+    // background-color: $teal-light;
+    width: 30rem;
+    text-align: center;
+    padding: 2rem 1rem;
+    transition: .2s;
+    border-radius: 6px;
+    &:hover{
+      box-shadow: 0 1rem 2rem rgba($color: #000000, $alpha: 0.2);
+      transform: translateY(-1rem);
+    }
+  }
+
+  &-icon{
+    color: $teal-primary;
+    font-size: 4rem;
+  }
+
+  &-text-heading{
+    font-size: 2rem;
+    font-weight: 900;
+    color: $teal-primary;
+  }
+
+  &-texts{
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+  }
+}
