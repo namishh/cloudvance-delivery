@@ -45,6 +45,7 @@ html{
   font-weight: 800;
   color: transparent;
   background: linear-gradient(to right, rgb(151, 217, 255), $teal-dark);
+  background-clip: text;
   -webkit-background-clip: text;
   margin-bottom: 2rem;
 }
