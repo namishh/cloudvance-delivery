@@ -1,5 +1,5 @@
 {
-  "name": "tliks",
+  "name": "cloudvance",
   "version": "1.0.0",
   "description": "![Logo](https://i.ibb.co/sVPB3v0/logo.png)",
   "main": "index.js",
@@ -11,10 +11,11 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {},
-  "devDependencies": {
-    "live-server": "^1.2.1",
+  "dependencies": {
     "node-sass": "^6.0.1"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.1"
   },
   "repository": {
     "type": "git",
