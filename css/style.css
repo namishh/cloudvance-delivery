@@ -17,6 +17,8 @@
       gap: 4rem; } }
   .cargoDrone-img {
     height: 20rem; }
+    .cargoDrone-img-2 {
+      height: 30rem; }
     @media screen and (max-width: 1338px) {
       .cargoDrone-img {
         width: 30rem;
@@ -159,7 +161,7 @@
     height: 4rem; }
   .navbar-list {
     list-style: none; }
-    @media screen and (max-width: 1224px) {
+    @media screen and (max-width: 1401px) {
       .navbar-list {
         display: none; } }
   .navbar-item {
@@ -180,7 +182,7 @@
   .navbar-userbox {
     display: flex;
     align-items: center; }
-    @media screen and (max-width: 1224px) {
+    @media screen and (max-width: 1401px) {
       .navbar-userbox {
         display: none; } }
   .navbar-user {
@@ -199,7 +201,7 @@
       font-size: 2rem;
       visibility: 0;
       opacity: 0; }
-      @media screen and (max-width: 1224px) {
+      @media screen and (max-width: 1401px) {
         .navbar-hidden .fas {
           visibility: visible;
           opacity: 1; } }
@@ -217,8 +219,7 @@
       transition: .4s;
       pointer-events: none; }
     .navbar-hidden-list {
-      list-style: none;
-      height: 0; }
+      list-style: none; }
     .navbar-hidden-link {
       color: #228be6;
       text-decoration: none; }
@@ -232,7 +233,7 @@
   width: 100%;
   opacity: 1;
   visibility: visible;
-  height: 30rem; }
+  height: 50rem; }
 
 .dropdown-btn {
   font-size: 1.6rem;
@@ -252,7 +253,7 @@
   border-radius: 10px;
   position: absolute;
   list-style: none;
-  height: 15rem;
+  height: 25rem;
   width: 20rem;
   background: #228be6;
   display: flex;
@@ -854,6 +855,9 @@
     .card-features-item:not(:first-child) {
       border-top: 1px solid white; }
 
+.pricing {
+  margin-top: 5rem; }
+
 html {
   overflow-x: hidden;
   font-size: 62.5%;
@@ -924,3 +928,22 @@ html {
   border-radius: 2px; }
   .btn-submit:focus {
     outline: none; }
+
+.imagediv {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 4rem; }
+  .imagediv img {
+    height: 30rem; }
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 3rem; }
+
+.fcontent {
+  font-size: 1.6rem;
+  text-align: center; }
