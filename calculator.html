@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="shortcut icon" href="#" type="image/x-icon">
+  <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+  <link href="https://kit-pro.fontawesome.com/releases/v5.15.4/css/pro.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+
+  
+  <script defer src="../js/location.js"></script>
+  
+</head>
+<body class="clearfix">
+  <a class="goback" href="/">
+    <i class="fas fa-home"></i>
+  </a>
+    <h1 class="headings mt-med">Delivery Calcultor Demo</h1>
+    <section class="calculator">
+      <div class="form-wrapper">
+          <form action="#" class="calculator-form form">
+            <div class="form-group">
+              <label for="form-weight">Weight (in kilograms)</label>
+              <input step="any" autocomplete="off" class="weight-input form-input" type="number" id="form-weight" placeholder="00" required>      
+            </div>
+            <div class="form-group">
+              <label for="form-type-select">Delivery Option</label>
+              <select class="form-type" name="weight-select" id="form-type-select">
+                <option value="standard">Standard</option>
+                <option value="fast">Fast</option>
+                <option value="express">Express</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="form-start">Start</label>
+              <input autocomplete="off" id="form-start" type="text" class="form-input from-input" placeholder="Delhi" required>
+            </div>
+            <div class="form-group">
+              <label for="form-end">End</label>
+              <input autocomplete="off" id="form-end" type="text" class="form-input to-input" placeholder="Haryana" required>
+            </div>
+
+            <div class="form-group">
+              <button class="btn-submit" type="submit">Submit</button>
+            </div>
+          </form>
+      </div>
+      <div class="calculator-result">
+        <p class="calculator-heading-bill">Final Bill</p>
+        <p class="calculator-final">
+          <span class="calculator-val">00</span>/-
+        </p>
+        <button class="btn-reset">Reset</button>
+      </div>
+      
+    </section>
+
+</body>
+</html>

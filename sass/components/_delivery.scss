@@ -1,0 +1,159 @@
+.order{
+  width: 80%;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  &-details{
+    // background: #e2c;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-intro{
+    display: flex;
+    align-items: center;
+    
+
+  }
+  &-img{
+
+    i {
+      text-align: center;
+      font-size: 3rem;
+      color: $teal-dark;
+      padding: 1rem;
+      border: currentColor solid 1px;
+      border-radius: 100px;
+      margin: 15px;
+      box-shadow: 0px 0px 0px 1px #fff inset;
+    }
+  }
+  &-id{
+    font-size: 2rem;
+    margin-left: 1rem;
+    color: $teal-dark;
+  }
+
+  &-info{
+    display: flex;
+    justify-content: space-between;
+    width: 20rem;
+  }
+
+  &-group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.4rem;
+  }
+
+  &-title{
+    color: $teal-dark;
+    margin-bottom: 0.2rem;
+  }
+
+  
+  &-overview{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &-status{
+      &-list{
+        font-size: 1.5rem;
+        list-style: none;
+      }
+
+      &-item{
+        margin: .7rem 0;
+      }
+
+  }
+
+}
+
+.progressbar{
+  height: 10rem;
+  width: 100%;
+  margin-top: 3rem;
+  &-list{
+    counter-reset: step;
+
+  }
+  &-item{
+    list-style: none;
+    float: left;
+    width: 20%;
+    position: relative;
+    font-size: 1.4rem;
+    text-align: center;
+    &::before{
+      content : counter(step);
+      counter-increment: step;
+      width: 2rem;
+      height: 2rem;
+      border: 1px solid $teal-dark;
+      display: block;
+      text-align: center;
+      border-radius: 50%;
+      margin: 0 auto 10px auto;
+      background: #fff;
+      padding: .2rem;
+    }
+
+    &::after{
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      left: -50%;
+      top: 10px;
+      background: $teal-dark;
+      z-index: -1;
+    }
+
+    &:first-child::after{
+      content: none;
+    }
+  }
+
+}
+
+
+
+.active{
+  color:$teal-dark;
+
+  &::before{
+    background-color: $teal-dark;
+    color: white;
+  }
+
+  & + li::after{
+    background-color: $teal-dark;
+    height: .2rem;
+  }
+}
+
+#map{
+  height: 65rem;
+  width: 100%;
+  margin-top: 1rem;
+  position: relative;
+}
+
+.bd{
+  padding: 3rem;
+}
+
+.heading{
+  color: $teal-dark;
+  font-size: 3rem;
+  font-weight: 600;
+}

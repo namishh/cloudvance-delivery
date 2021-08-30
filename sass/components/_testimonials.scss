@@ -77,5 +77,9 @@
     @include respond(480px){
       font-size: 1.3rem;
     }
+
+    @include respond(480px){
+      width: 25rem;
+    }
   }
 }

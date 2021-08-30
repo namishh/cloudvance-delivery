@@ -1,0 +1,43 @@
+.about{
+  &-content-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include respond(1090px){
+      flex-direction: column;
+      text-align: center;
+    }
+
+  }
+  &-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+  }
+  &-gif{
+    height: 25rem;
+    margin-right: 2rem;
+
+    @include respond(1284px){
+      height: 20rem;
+    }
+
+    @include respond(550px){
+      height: 15rem;
+    }
+
+    
+    @include respond(450px){
+      height: 10rem;
+    }
+  }
+
+  &-para{
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    @include respond(1192px){
+      font-size: 1.4rem;
+    }
+  }
+}

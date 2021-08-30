@@ -4,7 +4,11 @@
     flex-direction: column-reverse;
     justify-content: center;
   }
-  height: 86vh;
+  height: 67rem;
+  @include respond(1380px){
+  height: 50rem;
+      
+  }
   justify-content: space-between;
   align-items: center;
   padding: 2rem 6rem;
@@ -52,9 +56,12 @@
     }
 
   }
-  &-btn:link, &-btn:visited{
+  &-btn{
+    cursor: pointer;
     font-size: 2rem;
     color: $teal-dark;
+    display: inline-block;
+    text-decoration: underline;
     font-weight: 600;
     transition: .3s;
     @include respond(924px){

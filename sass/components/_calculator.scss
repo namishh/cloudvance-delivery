@@ -1,0 +1,108 @@
+.calculator{
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &-result{
+    // background: #a3f;
+    height: 35rem;
+    width: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+
+    button{
+      outline: none;
+      border: none;
+      background-color: $teal-dark;
+      cursor: pointer;
+      color: #fff;
+      padding: .8rem 2rem;
+      border-radius: 6px;
+      
+    }
+
+  }
+
+  &-heading-bill{
+    font-size: 3rem;
+    font-weight: 700;
+    color: $teal-light;
+  }
+
+  &-final{
+    font-size: 1.3rem;
+  }
+
+  &-val{
+    font-size: 3rem;
+  }
+
+  &-heading{
+    font-size: 1.4rem;
+    color: white;
+  }
+
+
+  &-form{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+}
+
+.form-wrapper{
+  height: 35rem;
+  width: 35rem;
+  background-color: $teal-primary;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.form{
+  &-group{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    label {
+      color: white;
+      align-items: flex-start;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+  }
+  &-input{
+    height: 3.5rem;
+    border-radius: 5px;
+    border: none;
+    padding: 1rem;
+
+    &:placeholder-shown{
+      padding: 1rem;
+    }
+    &:focus{
+      outline: none;
+    }
+  }
+
+  
+}
+
+#form-type-select{
+  padding: 1rem;
+  width: 18rem;
+  height: 3.5rem;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  color: grey;
+}

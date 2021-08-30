@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+  <link href="https://kit-pro.fontawesome.com/releases/v5.15.4/css/pro.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+<script defer src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+<script defer src="./js/delivery.js"></script>
+</head>
+<body class="clearfix">
+  <a class="goback" href="/">
+    <i class="fas fa-home"></i>
+  </a>
+  <div class="order">
+    <section class="map">
+      <div id="map"></div>
+    </section>
+  <h1 class="headings mt-med">Delivery Demo</h1>
+      <section class="order-details">
+        <div class="order-intro">
+          <div class="order-img">
+            <i class="fas fa-box-open"></i>
+          </div>
+          <p class="order-id">Order #133843709874</p>
+        </div>
+        <div class="order-info">
+          <div class="order-group">
+            <p class="order-title">Weight</p>
+            <p class="order-value">30Kg</p>
+          </div>
+          <div class="order-group">
+            <p class="order-title">From</p>
+            <p class="order-value">Delhi</p>
+          </div>
+          <div class="order-group">
+            <p class="order-title">To</p>
+            <p class="order-value">Jaipur</p>
+          </div>
+        </div>
+      </section>  
+      <section class="progressbar">
+        <ul class="progressbar-list">
+          <li class="progressbar-item active">Recieved</li>
+          <li class="progressbar-item active">At Center Hub</li>
+          <li class="progressbar-item">At Nearest Hub</li>
+          <li class="progressbar-item">On the Way</li>
+          <li class="progressbar-item">Delivered</li>
+        </ul>
+      </section>
+      <section class="order-overview mt-med">
+       <section class="order-status">
+         <ul class="order-status-list">
+           <li class="order-status-item">10:30 AM &rarr; Item Picked Up From Nearest Facility</li>
+           <li class="order-status-item">10:45 AM &rarr; Item On It's way To Center Location</li>
+           <li class="order-status-item">2:30 PM &rarr; Item Reached the Center Location</li>
+           <li class="order-status-item">2:45 PM &rarr; Item Picked Up By Another Drone</li>
+         </ul>
+       </section> 
+       <section class="order-arrival">
+         <p class="heading">Your Order Will Be With You By Tomorrow</p>
+       </section>
+      </section>
+  </div>
+
+
+
+</body>
+</html>
