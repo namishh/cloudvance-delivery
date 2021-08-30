@@ -39,5 +39,8 @@
     @include respond(1192px){
       font-size: 1.4rem;
     }
+    @include respond(450px){
+      width: 20rem;
+    }
   }
 }

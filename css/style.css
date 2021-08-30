@@ -304,6 +304,9 @@
     @media screen and (max-width: 1400px) {
       .hero-img {
         height: 25rem; } }
+    @media screen and (max-width: 410px) {
+      .hero-img {
+        height: 15rem; } }
   .hero-text {
     font-weight: 400;
     font-size: 6rem; }
@@ -791,6 +794,65 @@
   @media screen and (max-width: 1192px) {
     .about-para {
       font-size: 1.4rem; } }
+  @media screen and (max-width: 450px) {
+    .about-para {
+      width: 20rem; } }
+
+.card {
+  background: #4dabf7;
+  width: 26rem;
+  text-align: center;
+  border-radius: 12px;
+  height: 40rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5rem; }
+  .card-container {
+    padding: 0 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    align-items: center; }
+    @media screen and (max-width: 994px) {
+      .card-container {
+        flex-direction: column; } }
+  .card-heading {
+    margin-top: -2rem; }
+    .card-heading-text {
+      font-size: 3rem;
+      font-weight: 700;
+      color: white; }
+    .card-heading-tag {
+      margin-top: 0.8rem;
+      background: #e4d124;
+      display: inline-block;
+      padding: .3rem .3rem;
+      border-radius: 5px;
+      font-weight: 600; }
+  .card-price-text {
+    font-size: 4rem;
+    font-weight: 600;
+    color: white; }
+  .card-features-list {
+    margin: 0;
+    list-style: none;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around; }
+  .card-features-item {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    white-space: nowrap;
+    word-break: keep-all;
+    text-overflow: unset;
+    padding: .7rem 0 .7rem 0;
+    width: 18rem; }
+    .card-features-item:not(:first-child) {
+      border-top: 1px solid white; }
 
 html {
   overflow-x: hidden;

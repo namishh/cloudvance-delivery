@@ -9,6 +9,7 @@
   height: 50rem;
       
   }
+
   justify-content: space-between;
   align-items: center;
   padding: 2rem 6rem;
@@ -21,6 +22,11 @@
     @include respond(1400px){
       height: 25rem;
     }
+
+    @include respond(410px){
+      height: 15rem;
+          
+      }
   }
 
   &-text{
