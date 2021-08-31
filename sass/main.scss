@@ -68,9 +68,16 @@ html{
   cursor: pointer;
   z-index: 12044341342;
   font-size: 3rem;
-  bottom: 2rem;
-  right: 2rem;
+  bottom: 3rem;
+  right: 3rem;
   transition: .3s;
+  background: #fff;
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
   
   i{
     color: $teal-dark;
