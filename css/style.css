@@ -662,6 +662,9 @@
     width: 100%;
     justify-content: space-between;
     align-items: center; }
+    @media screen and (max-width: 900px) {
+      .order-details {
+        flex-direction: column; } }
   .order-intro {
     display: flex;
     align-items: center; }
@@ -696,9 +699,15 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center; }
+    @media screen and (max-width: 624px) {
+      .order-overview {
+        flex-direction: column; } }
   .order-status-list {
     font-size: 1.5rem;
     list-style: none; }
+    @media screen and (max-width: 900px) {
+      .order-status-list {
+        font-size: 1.3rem; } }
   .order-status-item {
     margin: .7rem 0; }
 
@@ -760,7 +769,11 @@
 .heading {
   color: #339af0;
   font-size: 3rem;
-  font-weight: 600; }
+  font-weight: 600;
+  text-align: center; }
+  @media screen and (max-width: 900px) {
+    .heading {
+      font-size: 2rem; } }
 
 .about-content-wrapper {
   display: flex;
@@ -861,8 +874,7 @@
 html {
   overflow-x: hidden;
   font-size: 62.5%;
-  font-family: 'Montserrat', sans-serif;
-  scroll-behavior: smooth; }
+  font-family: 'Montserrat', sans-serif; }
   @media screen and (max-width: 1200px) {
     html {
       font-size: 56.25%; } }
@@ -934,8 +946,17 @@ html {
   justify-content: center;
   gap: 2rem;
   margin-top: 4rem; }
+  @media screen and (max-width: 898px) {
+    .imagediv {
+      flex-direction: column; } }
   .imagediv img {
     height: 30rem; }
+    @media screen and (max-width: 1300px) {
+      .imagediv img {
+        height: 20rem; } }
+    @media screen and (max-width: 449px) {
+      .imagediv img {
+        height: 10rem; } }
 
 .content {
   display: flex;
@@ -947,3 +968,6 @@ html {
 .fcontent {
   font-size: 1.6rem;
   text-align: center; }
+  @media screen and (max-width: 900px) {
+    .fcontent {
+      font-size: 1.4rem; } }

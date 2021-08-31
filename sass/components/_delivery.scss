@@ -10,6 +10,10 @@
     width: 100%;
     justify-content: space-between;
     align-items: center;
+
+    @include respond(900px){
+      flex-direction: column;
+    }
   }
 
   &-intro{
@@ -62,12 +66,18 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    @include respond(624px){
+      flex-direction: column;
+    }
   }
 
   &-status{
       &-list{
         font-size: 1.5rem;
         list-style: none;
+        @include respond(900px){
+          font-size: 1.3rem;
+        }
       }
 
       &-item{
@@ -156,4 +166,8 @@
   color: $teal-dark;
   font-size: 3rem;
   font-weight: 600;
+  text-align: center;
+  @include respond(900px){
+    font-size: 2rem;
+  }
 }

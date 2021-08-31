@@ -21,7 +21,6 @@ html{
   overflow-x: hidden;
   font-size: 62.5%;
   font-family: 'Montserrat', sans-serif;
-  scroll-behavior: smooth;
 
       @include respond(1200px) { // width < 1200?
           font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
@@ -112,9 +111,21 @@ html{
   display: flex;
   justify-content: center;
   gap: 2rem;
+  @include respond(898px){
+    // font-size: 1.4rem;
+    flex-direction: column;
+  }
   margin-top: 4rem;
   img{
     height: 30rem;
+    @include respond(1300px){
+      height: 20rem;
+  }
+
+  @include respond(449px){
+    height: 10rem;
+  }
+
   }
 }
 
@@ -128,4 +139,8 @@ html{
 .fcontent{
   font-size: 1.6rem;
   text-align: center;
+
+  @include respond(900px){
+    font-size: 1.4rem;
+  }
 }
