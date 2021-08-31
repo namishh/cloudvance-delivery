@@ -8,6 +8,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 5rem;
   // Container
   &-container{
@@ -78,4 +79,8 @@
 .pricing{
   margin-top: 5rem;
 
+}
+
+.card-special{
+  height: 45rem;
 }

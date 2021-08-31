@@ -405,6 +405,7 @@
       right: 1rem;
       top: -.2rem; }
   .faqs-answer {
+    text-align: left;
     padding: 1rem;
     font-size: 1.3rem; }
     .faqs-answer .content {
@@ -823,6 +824,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 5rem; }
   .card-container {
     padding: 0 2rem;
@@ -871,6 +873,9 @@
 
 .pricing {
   margin-top: 5rem; }
+
+.card-special {
+  height: 45rem; }
 
 html {
   overflow-x: hidden;
