@@ -149,8 +149,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 2rem;
-  position: relative; }
+  padding: 2rem 2rem; }
   .navbar-logo {
     cursor: pointer;
     height: 3rem; }
