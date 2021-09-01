@@ -12,12 +12,44 @@
 
   
   <script defer src="../js/location.js"></script>
+  <script defer src="./js/navbar.js"></script>
   
 </head>
 <body class="clearfix">
-  <a class="goback" href="/">
-    <i class="fas fa-home"></i>
-  </a>
+  <header id="navbar" class="navbar section-navbar">
+    <div class="navbar-hidden">
+      <i class="fas fa-bars nav-toggle"></i> 
+      <div class="navbar-hidden-links">
+        <ul class="navbar-hidden-list">
+          <li id="" class="navbar-hidden-item"><a class="navbar-hidden-link" href="/"></a>Home</a></li>
+          <li id="drone" class="navbar-hidden-item"><a class="navbar-hidden-link" href="/drones.html">Drones</a></li>
+          <li id="drone" class="navbar-hidden-item"><a class="navbar-hidden-link" href="/calculator.html">Demo Calculator</a></li>
+          <li id="drone" class="navbar-hidden-item"><a class="navbar-hidden-link" href="/delivery.html">Demo Delivery Tracker</a></li>
+          <li id="drone" class="navbar-hidden-item"><a class="navbar-hidden-link" href="/ai-van.html">AI Van</a></li>
+          <li id="drone" class="navbar-hidden-item"><a class="navbar-hidden-link" href="/future-vision.html">Future Plans</a></li>
+
+        <img src="./assests/school.png" alt="" class="navbar-img">
+        </ul>
+      </div>
+    </div>
+    <a href="/">
+      <img class="navbar-logo" src="./assests/logo.png" alt="">
+    </a>
+    <nav class="navbar-nav">
+    <ul class="navbar-list">
+      <li id = "navbar" class="navbar-item"><a href="/" class="nav-link">Home</a></li>
+      <li class="navbar-item"><a href="/drones.html" class="navbar-link">Drone</a></li>
+      <li class="navbar-item"><a href="/calculator.html" class="navbar-link">Calculator</a></li>
+      <li class="navbar-item"><a href="/delivery.html" class="navbar-link">Track Order Demo</a></li>
+      <li class="navbar-item"><a href="/ai-van.html" class="navbar-link">Ai Van</a></li>
+      <li class="navbar-item"><a href="/future-vision.html" class="navbar-link">Our Future</a></li>
+    </ul>
+  </nav>
+    <div class="navbar-userbox">
+      <p class="navbar-user">SSVE</p>
+      <img src="./assests/school.png" alt="" class="navbar-img">
+    </div>
+  </header>
     <h1 class="headings mt-med">Delivery Calcultor Demo</h1>
     <section class="calculator">
       <div class="form-wrapper">

@@ -87,7 +87,9 @@
   }
 
 }
-
+.map{
+  width: 100%;
+}
 .progressbar{
   height: 10rem;
   width: 100%;
@@ -152,7 +154,7 @@
 }
 
 #map{
-  height: 65rem;
+  height: 80rem;
   width: 100%;
   margin-top: 1rem;
   position: relative;

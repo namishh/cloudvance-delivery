@@ -1,10 +1,13 @@
 .navbar{
+  z-index: 21345123453;
   background-color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 2rem 2rem;
-  position: relative;
+  position: fixed;
+  width: 100%;
+
 
   &-logo{
     cursor: pointer;
@@ -22,6 +25,8 @@
   }
 
   &-list{
+  background-color: #fff;
+
     list-style: none;
 
     @include respond(1401px){
@@ -30,6 +35,8 @@
   }
 
   &-item{
+  background-color: #fff;
+
     display: inline-block;
     padding: 0 2rem;
     font-size: 1.6rem;
