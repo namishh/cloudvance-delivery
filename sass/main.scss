@@ -91,13 +91,13 @@ html{
 
 .section{
   // transform: translateY(0);
-  transition: .2s;
+  transition: .8s;
 }
 
 .section--hidden{
   visibility: 0;
   opacity: 0;
-  transform: translateY(2rem);
+  transform: translateY(2.6rem);
 }
 
 

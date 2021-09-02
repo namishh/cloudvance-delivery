@@ -960,12 +960,12 @@ html {
   opacity: 0; }
 
 .section {
-  transition: .2s; }
+  transition: .8s; }
 
 .section--hidden {
   visibility: 0;
   opacity: 0;
-  transform: translateY(2rem); }
+  transform: translateY(2.6rem); }
 
 .btn-submit {
   border: 1px solid white;
