@@ -196,22 +196,23 @@
   .navbar-hidden {
     position: absolute;
     top: 2rem;
-    width: 95%; }
+    width: 100%; }
     .navbar-hidden > * {
       position: absolute; }
     .navbar-hidden .fas {
-      right: 0rem;
+      right: 5rem;
       color: #228be6;
       font-size: 2rem;
       visibility: 0;
-      opacity: 0; }
+      opacity: 0;
+      z-index: 23456784234567; }
       @media screen and (max-width: 1401px) {
         .navbar-hidden .fas {
           visibility: visible;
           opacity: 1; } }
       @media screen and (max-width: 600px) {
         .navbar-hidden .fas {
-          right: 1rem; } }
+          right: 6rem; } }
     .navbar-hidden-links {
       top: 4rem;
       z-index: 10000;

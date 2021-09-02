@@ -80,24 +80,25 @@
   &-hidden{
     position: absolute;
     top: 2rem;
-    width: 95%;
+    width: 100%;
 
     & > *{
       position: absolute;
     }
 
     .fas{
-      right: 0rem;
+      right: 5rem;
       color: $teal-darkest;
       font-size: 2rem;
       visibility: 0;
       opacity: 0;
+      z-index: 23456784234567;
       @include respond(1401px){
         visibility: visible;
         opacity: 1;
       }
       @include respond(600px){
-        right: 1rem;
+        right: 6rem;
       }
     }
 
