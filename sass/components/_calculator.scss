@@ -1,9 +1,17 @@
 .calculator{
   height: 60vh;
   width: 100%;
+  @include respond(670px){
+    height: auto;
+    width: 80%;
+
+  }
   display: flex;
   justify-content: center;
   align-items: center;
+  @include respond(670px){
+    flex-direction: column;
+  }
   &-result{
     // background: #a3f;
     height: 35rem;
@@ -12,7 +20,11 @@
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
-
+    @include respond(670px){
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-around;
+    }
     button{
       outline: none;
       border: none;
@@ -65,6 +77,9 @@
   align-items: center;
   flex-direction: column;
   justify-content: space-around;
+  @include respond(670px){
+    height: 45rem;
+  }
 }
 
 .form{

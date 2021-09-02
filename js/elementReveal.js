@@ -1,25 +1,3 @@
-// Observer For Up Btn
-
-const headerPoint = document.querySelector('.section-content')
-const upBtn = document.querySelector('.up-btn')
-const headerObserver = new IntersectionObserver((entries , observers) => {
-  const [entry] = entries
-
-  if(!entry.isIntersecting) {
-    upBtn.classList.add('hidden-btn')
-    return
-  }
-  console.log("Ok")
-  upBtn.classList.remove('hidden-btn')
-
-}, {
-  root:null,
-  threshold : 0.1,
-});
-
-headerObserver.observe(headerPoint)
-
-
 // Reveal on Scroll
 const allSections = document.querySelectorAll('.section')
 console.log(allSections)

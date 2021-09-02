@@ -89,14 +89,17 @@ html{
   opacity: 0;
 }
 
+.section{
+  // transform: translateY(0);
+  transition: .2s;
+}
+
 .section--hidden{
   visibility: 0;
   opacity: 0;
+  transform: translateY(2rem);
 }
 
-.section{
-  transition: .2s;
-}
 
 .btn-submit{
 
